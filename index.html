@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шкала депресії Бека</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Шкала депресії Бека</h2>
+
+        <div class="instruction">
+            <p><strong>Інструкція</strong></p>
+            <p>Цей опитувальник складається з 21 пункту, кожен з яких містить кілька варіантів тверджень. Будь ласка, <strong>уважно прочитайте</strong> всі варіанти відповідей до кожного пункту і виберіть один з них, який найкраще описує ваше самопочуття <strong>протягом останніх двох тижнів, включаючи сьогоднішній день</strong>. Натисніть на обране вами твердження. Переконайтесь, що ви не пропустили жодного пункту.</p>
+            <p>Після заповнення опитувальника натисніть на кнопку <strong>Обробити</strong>.</p>
+        </div>
+
+        <form id="beckTestForm">
+            <!-- 1 -->
+            <div class="question-block">
+                <p class="question-number">1</p>
+                <label><input type="radio" name="q1" value="0"> Мені не сумно</label>
+                <label><input type="radio" name="q1" value="1"> Значну частину часу мені сумно</label>
+                <label><input type="radio" name="q1" value="2"> Я увесь час почуваюсь сумним, пригніченим</label>
+                <label><input type="radio" name="q1" value="3"> Я відчуваю нестерпний сум і тугу</label>
+            </div>
+
+            <!-- 2 -->
+            <div class="question-block">
+                <p class="question-number">2</p>
+                <label><input type="radio" name="q2" value="0"> Я не вважаю, що заслуговую покарання</label>
+                <label><input type="radio" name="q2" value="1"> Я допускаю, що заслуговую покарання</label>
+                <label><input type="radio" name="q2" value="2"> Я вважаю, що маю бути покараний</label>
+                <label><input type="radio" name="q2" value="3"> Я відчуваю, що доля карає мене</label>
+            </div>
+
+            <!-- 3 -->
+            <div class="question-block">
+                <p class="question-number">3</p>
+                <label><input type="radio" name="q3" value="0"> Я спокійно думаю про майбутнє</label>
+                <label><input type="radio" name="q3" value="1"> Думки про майбутнє викликають у мене занепокоєння більше, ніж раніше</label>
+                <label><input type="radio" name="q3" value="2"> Мені нема чого чекати від майбутнього і на що надіятися</label>
+                <label><input type="radio" name="q3" value="3"> Я відчуваю, що в моєму майбутньому нема нічого доброго і я нічого не можу змінити</label>
+            </div>
+
+            <!-- 4 -->
+            <div class="question-block">
+                <p class="question-number">4</p>
+                <label><input type="radio" name="q4" value="0"> Я не відчуваю себе невдахою</label>
+                <label><input type="radio" name="q4" value="1"> У минулому я мав би менше зазнавати невдач</label>
+                <label><input type="radio" name="q4" value="2"> Моє життя – це суцільна низка невдач та помилок</label>
+                <label><input type="radio" name="q4" value="3"> Я абсолютний невдаха в усьому (навчанні, праці, сімейному житті і т.д.)</label>
+            </div>
+
+            <!-- 5 -->
+            <div class="question-block">
+                <p class="question-number">5</p>
+                <label><input type="radio" name="q5" value="0"> Я в основному задоволений тим, ким я є</label>
+                <label><input type="radio" name="q5" value="1"> Я втратив впевненість у собі</label>
+                <label><input type="radio" name="q5" value="2"> Я розчарований в собі</label>
+                <label><input type="radio" name="q5" value="3"> Я не люблю себе</label>
+            </div>
+
+            <!-- 6 -->
+            <div class="question-block">
+                <p class="question-number">6</p>
+                <label><input type="radio" name="q6" value="0"> Я отримую задоволення від улюблених занять і речей</label>
+                <label><input type="radio" name="q6" value="1"> Я не отримую такого задоволення, як раніше від улюблених занять та речей</label>
+                <label><input type="radio" name="q6" value="2"> Я отримую дуже мало задоволення від того, що зазвичай мене тішило</label>
+                <label><input type="radio" name="q6" value="3"> Я не можу отримати задоволення від того, що зазвичай мене тішило</label>
+            </div>
+
+            <!-- 7 -->
+            <div class="question-block">
+                <p class="question-number">7</p>
+                <label><input type="radio" name="q7" value="0"> Я критикую і звинувачую себе не більше, ніж зазвичай</label>
+                <label><input type="radio" name="q7" value="1"> Я більш критичний до себе, ніж зазвичай</label>
+                <label><input type="radio" name="q7" value="2"> Я критикую себе за всі свої помилки</label>
+                <label><input type="radio" name="q7" value="3"> Я звинувачую себе у всьому поганому, що відбувається</label>
+            </div>
+
+            <!-- 8 -->
+            <div class="question-block">
+                <p class="question-number">8</p>
+                <label><input type="radio" name="q8" value="0"> Я не відчуваю провини</label>
+                <label><input type="radio" name="q8" value="1"> Я переживаю почуття провини за багато речей, зроблених мною</label>
+                <label><input type="radio" name="q8" value="2"> Я дуже часто почуваюсь поганою людиною і мене мучить почуття провини</label>
+                <label><input type="radio" name="q8" value="3"> Мене мучить постійне почуття провини</label>
+            </div>
+
+            <!-- 9 -->
+            <div class="question-block">
+                <p class="question-number">9</p>
+                <label><input type="radio" name="q9" value="0"> У мене не виникає думок про самогубство</label>
+                <label><input type="radio" name="q9" value="1"> У мене бувають думки про самогубство, але я знаю, що не зроблю цього</label>
+                <label><input type="radio" name="q9" value="2"> Я хочу вмерти і планую самогубство</label>
+                <label><input type="radio" name="q9" value="3"> Якщо б була нагода, я б вчинив самогубство</label>
+            </div>
+
+            <!-- 10 -->
+            <div class="question-block">
+                <p class="question-number">10</p>
+                <label><input type="radio" name="q10" value="0"> Я не відчуваю більший об'єм неспокою або тривожності, ніж зазвичай</label>
+                <label><input type="radio" name="q10" value="1"> Я відчуваю більше занепокоєння і тривоги, ніж зазвичай</label>
+                <label><input type="radio" name="q10" value="2"> Я відчуваю таке занепокоєння та неспокій, що мені важко сидіти спокійно</label>
+                <label><input type="radio" name="q10" value="3"> Я відчуваю таке занепокоєння і тривожность, що змушений весь час рухатися або щось робити</label>
+            </div>
+
+            <!-- 11 -->
+            <div class="question-block">
+                <p class="question-number">11</p>
+                <label><input type="radio" name="q11" value="0"> Я не плáчу частіше, ніж зазвичай</label>
+                <label><input type="radio" name="q11" value="1"> Я плачу частіше, ніж звичайно</label>
+                <label><input type="radio" name="q11" value="2"> Я плачу кожен день через кожен незначний привід</label>
+                <label><input type="radio" name="q11" value="3"> Я хочу плакати, але не можу</label>
+            </div>
+
+            <!-- 12 -->
+            <div class="question-block">
+                <p class="question-number">12</p>
+                <label><input type="radio" name="q12" value="0"> Я не втратив цікавості до інших людей і занять</label>
+                <label><input type="radio" name="q12" value="1"> Люди і речі цікавлять мене менше, ніж раніше</label>
+                <label><input type="radio" name="q12" value="2"> Я значною мірою втратив цікавість до інших людей і занять</label>
+                <label><input type="radio" name="q12" value="3"> Мене важко чимось зацікавити</label>
+            </div>
+
+            <!-- 13 -->
+            <div class="question-block">
+                <p class="question-number">13</p>
+                <label><input type="radio" name="q13" value="0"> Я не дратуюсь частіше, ніж звичайно</label>
+                <label><input type="radio" name="q13" value="1"> Я дратуюся легше, ніж звичайно</label>
+                <label><input type="radio" name="q13" value="2"> Я дратуюся значно легше, ніж звичайно</label>
+                <label><input type="radio" name="q13" value="3"> Я постійно відчуваю роздратування</label>
+            </div>
+
+            <!-- 14 -->
+            <div class="question-block">
+                <p class="question-number">14</p>
+                <label><input type="radio" name="q14" value="0"> Мені не важче, ніж звичайно, приймати рішення</label>
+                <label><input type="radio" name="q14" value="1"> Тепер частіше, ніж раніше, я зволікаю з прийняттям рішень</label>
+                <label><input type="radio" name="q14" value="2"> Мені дуже важко прийняти будь-яке рішення</label>
+                <label><input type="radio" name="q14" value="3"> Я не в стані приймати жодних рішень</label>
+            </div>
+
+            <!-- 15 -->
+            <div class="question-block">
+                <p class="question-number">15</p>
+                <label><input type="radio" name="q15" value="0"> Мій апетит не змінився</label>
+                <label><input type="radio" name="q15" value="1"> Мій апетит дещо знижений у порівнянні зі звичайним</label>
+                <label><input type="radio" name="q15" value="1"> Мій апетит дещо підвищений у порівнянні зі звичайним</label>
+                <label><input type="radio" name="q15" value="2"> Мій апетит значно знижений у порівнянні з минулим</label>
+                <label><input type="radio" name="q15" value="2"> Мій апетит значно підвищений у порівнянні з минулим</label>
+                <label><input type="radio" name="q15" value="3"> У мене зовсім нема апетиту</label>
+                <label><input type="radio" name="q15" value="3"> Я постійно хочу їсти</label>
+            </div>
+
+            <!-- 16 -->
+            <div class="question-block">
+                <p class="question-number">16</p>
+                <label><input type="radio" name="q16" value="0"> Я не відчуваю себе нікчемним</label>
+                <label><input type="radio" name="q16" value="1"> Я не відчуваю себе таким же цінним і корисним, як завжди</label>
+                <label><input type="radio" name="q16" value="2"> Я відчуваю себе менш цінним, ніж інші</label>
+                <label><input type="radio" name="q16" value="3"> Я відчуваю себе повністю нікчемним</label>
+            </div>
+
+            <!-- 17 -->
+            <div class="question-block">
+                <p class="question-number">17</p>
+                <label><input type="radio" name="q17" value="0"> Я так само добре можу зосередитися, як завжди</label>
+                <label><input type="radio" name="q17" value="1"> Я не можу так само добре зосередитися, як завжди</label>
+                <label><input type="radio" name="q17" value="2"> Мені важко довго утримувати увагу на чому-небудь</label>
+                <label><input type="radio" name="q17" value="3"> Я не можу зосередитися ні на чому</label>
+            </div>
+
+            <!-- 18 -->
+            <div class="question-block">
+                <p class="question-number">18</p>
+                <label><input type="radio" name="q18" value="0"> Я так само енергійний, як зазвичай</label>
+                <label><input type="radio" name="q18" value="1"> У мене менше енергії, ніж зазвичай</label>
+                <label><input type="radio" name="q18" value="2"> У мене недостатньо енергії, щоб зробити багато чого з того, що потрібно</label>
+                <label><input type="radio" name="q18" value="3"> У мене немає сил ні на що</label>
+            </div>
+
+            <!-- 19 -->
+            <div class="question-block">
+                <p class="question-number">19</p>
+                <label><input type="radio" name="q19" value="0"> Я втомлююся не більше, ніж зазвичай</label>
+                <label><input type="radio" name="q19" value="1"> Я втомлююся значно легше, ніж раніше</label>
+                <label><input type="radio" name="q19" value="2"> Через втому я не можу виконувати багато звичних для мене справ</label>
+                <label><input type="radio" name="q19" value="3"> Через втому я не можу виконувати більшість звичних для мене справа</label>
+            </div>
+
+            <!-- 20 -->
+            <div class="question-block">
+                <p class="question-number">20</p>
+                <label><input type="radio" name="q20" value="0"> Я сплю так само, як завжди</label>
+                <label><input type="radio" name="q20" value="1"> Я сплю дещо більше, ніж зазвичай</label>
+                <label><input type="radio" name="q20" value="1"> Я сплю дещо менше, ніж зазвичай</label>
+                <label><input type="radio" name="q20" value="2"> Я сплю значно більше, ніж зазвичай</label>
+                <label><input type="radio" name="q20" value="2"> Я сплю значно менше, ніж зазвичай</label>
+                <label><input type="radio" name="q20" value="3"> Я сплю більшу частину дня</label>
+                <label><input type="radio" name="q20" value="3"> Я пробуджуюсь на 1-2 години раніше, ніж звичайно, і мені важко знову заснути</label>
+            </div>
+
+            <!-- 21 -->
+            <div class="question-block">
+                <p class="question-number">21</p>
+                <label><input type="radio" name="q21" value="0"> Мій інтерес до статевого життя за останній час не зменшився</label>
+                <label><input type="radio" name="q21" value="1"> Статеве життя мене цікавить зараз менше, ніж звичайно</label>
+                <label><input type="radio" name="q21" value="2"> Мій інтерес до статевого життя значно зменшився</label>
+                <label><input type="radio" name="q21" value="3"> Я повністю втратив інтерес до статевого життя</label>
+            </div>
+
+            <button type="submit">Обробити</button>
+        </form>
+
+        <div id="result">
+            <p id="resultHeadline">Результати обробки тесту (кількість балів): <span id="totalScore">0</span></p>
+            <p>Інтерпретація результатів: <strong id="interpretation"></strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
